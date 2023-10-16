@@ -107,7 +107,7 @@ function Header() {
                 Ориентированный на среднюю или высокую производительность
                 тестов, анализатор ABL800 FLEX измеряет полный набор параметров,
                 включая pH, газы крови, электролиты, метаболиты и показатели
-                оксиметрии
+                оксиметрии  
               </p>
               <div className="max-[500px]:w-[335px] h-[60px] max-sm:mt-[15rem]  w-[270px] but  mt-10 flex justify-center items-center rounded-[35px] btn  ">
                 <button className="   text-[#FFF] text-2xl font-medium leading-normal">
