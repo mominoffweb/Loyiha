@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Item1 from "../assets/BD.png";
 import Item2 from "../assets/biosense.png";
 import Item3 from "../assets/braun1.png";
@@ -16,6 +15,16 @@ import { ImLocation } from "react-icons/Im";
 import { BsFillEnvelopeFill } from "react-icons/Bs";
 import { Link } from "react-router-dom";
 import Create from "./Create";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Navigation, EffectFade, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/effect-cube";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function Footer() {
   return (
@@ -28,39 +37,121 @@ function Footer() {
           ПАРТНЕРЫ
         </a>
       </div>
-      <div className="max-sm:ml-[5rem]  max-sm:w-[600px] text-center grid grid-cols-4 py-14 gap-8 px-20 max-md:grid-cols-2">
-        <div className="border  fox flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item3} alt="" />
-        </div>
+      <Swiper
+        pagination={true}
+        navigation={true}
+        spaceBetween={50}
+        modules={[EffectCube, Pagination, Navigation]}
+        slidesPerView={1}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <div className="max-sm:ml-[5rem]  max-sm:w-[600px] text-center grid grid-cols-4 py-14 gap-8 px-20 max-md:grid-cols-2">
+            <div className="border  fox flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item3} alt="" />
+            </div>
 
-        <div className=" max-sm:hidden border fox1 foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item8} alt="" />
-        </div>
+            <div className=" max-sm:hidden border fox1 foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item8} alt="" />
+            </div>
 
-        <div className=" max-sm:hidden border fox2  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item1} alt="" />
-        </div>
+            <div className=" max-sm:hidden border fox2  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item1} alt="" />
+            </div>
 
-        <div className=" max-sm:hidden border fox3  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item2} alt="" />
-        </div>
+            <div className=" max-sm:hidden border fox3  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item2} alt="" />
+            </div>
 
-        <div className="border fox4 foxs max-md:hidden flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item4} alt="" />
-        </div>
+            <div className="border fox4 foxs max-md:hidden flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item4} alt="" />
+            </div>
 
-        <div className="border fox5 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item5} alt="" />
-        </div>
+            <div className="border fox5 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item5} alt="" />
+            </div>
 
-        <div className="border fox6 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item6} alt="" />
-        </div>
+            <div className="border fox6 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item6} alt="" />
+            </div>
 
-        <div className="border fox7 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
-          <img className="" src={Item7} alt="" />
-        </div>
-      </div>
+            <div className="border fox7 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item7} alt="" />
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="max-sm:ml-[5rem]  max-sm:w-[600px] text-center grid grid-cols-4 py-14 gap-8 px-20 max-md:grid-cols-2">
+            <div className="border  fox flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item3} alt="" />
+            </div>
+
+            <div className=" max-sm:hidden border fox1 foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item8} alt="" />
+            </div>
+
+            <div className=" max-sm:hidden border fox2  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item1} alt="" />
+            </div>
+
+            <div className=" max-sm:hidden border fox3  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item2} alt="" />
+            </div>
+
+            <div className="border fox4 foxs max-md:hidden flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item4} alt="" />
+            </div>
+
+            <div className="border fox5 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item5} alt="" />
+            </div>
+
+            <div className="border fox6 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item6} alt="" />
+            </div>
+
+            <div className="border fox7 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item7} alt="" />
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="max-sm:ml-[5rem]  max-sm:w-[600px] text-center grid grid-cols-4 py-14 gap-8 px-20 max-md:grid-cols-2">
+            <div className="border  fox flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item3} alt="" />
+            </div>
+
+            <div className=" max-sm:hidden border fox1 foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item8} alt="" />
+            </div>
+
+            <div className=" max-sm:hidden border fox2  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item1} alt="" />
+            </div>
+
+            <div className=" max-sm:hidden border fox3  foxs flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item2} alt="" />
+            </div>
+
+            <div className="border fox4 foxs max-md:hidden flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item4} alt="" />
+            </div>
+
+            <div className="border fox5 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item5} alt="" />
+            </div>
+
+            <div className="border fox6 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item6} alt="" />
+            </div>
+
+            <div className="border fox7 foxs max-md:hidden  flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+              <img className="" src={Item7} alt="" />
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
 
       <div className="max-sm:flex-col flex footer_bg  py-14 justify-center items-center ">
         <div className="">

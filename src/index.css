@@ -189,3 +189,20 @@ nav a:active {
 .loGo {
   border: 1px solid rgb(243, 242, 241);
 }
+
+.swiper-button-prev {
+  color: white !important;
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%) !important;
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.swiper-button-next {
+  color: white !important;
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%) !important;
+  border-radius: 60%;
+  width: 60px;
+  height: 60px;
+  margin-left: 2rem;
+}

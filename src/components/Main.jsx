@@ -16,6 +16,18 @@ import Frame from "../assets/Frame.png";
 import Image from "../assets/Ekran.png";
 import Arraw1 from "../assets/arrow1.svg";
 import Arraw2 from "../assets/arrow2.svg";
+import Modal from "../components/Modal";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Navigation, EffectFade, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/effect-cube";
+import { useState } from "react";
+import { useEffect } from "react";
+
 function Main() {
   return (
     <div className=" bg-white w-full      py-[65px]">
@@ -231,7 +243,7 @@ function Main() {
         </div>
       </div>
 
-      <div className="py-20 px-20">
+      <div className="py-20">
         <div id=" НОВОСТИ" className="flex justify-center  items-center ">
           <a
             href="#НОВОСТИ"
@@ -241,111 +253,25 @@ function Main() {
           </a>
         </div>
 
-        <div className=" flex  justify-center items-center gap-14 py-40 relative">
-          <div className="flex ml-[4rem] gap-14  max-md:w-[320px] max-md:ml-[-20rem] ">
-            <div className="max-sm:ml-[12rem] ">
-              <div className="">
-                <img
-                  className="  max-md:w-[270px] top-[30px]  absolute z-10"
-                  src={Frame}
-                  alt=""
-                />
-              </div>
-              <div className="py-24 btn1 bock w-[382px] h-[470px] rounded-[35px] max-md:w-[320px] ml-[-2rem] opacity-90 bro">
-                <a
-                  href="#"
-                  className="w-[312px] text-center flex items-center justify-center ml-10  max-md:ml-[10px] texts text-[#0D4C93] text-xl font-normal leading-normal"
-                >
-                  Mастер-класс в исполнении Галлямова Эдуарда Абдулхаевича
-                </a>
-                <p className="text-[#0D4C93] text-center py-5 text-lg font-medium  leading-6">
-                  26.07.2021
-                </p>
-                <p className="w-[327px] h-[171px] text-[#363535] max-md:ml-[-13px] text-center ml-10  text-sm font-normal leading-6">
-                  С 19 по 21 апреля в АО «РСНПМЦУ» (Республиканский
-                  Специализированный <br />
-                  Научно-Практический Медицинский Центр Урологии) при поддержке
-                  компаний <br /> Ethicon Endo Surgery (Johnson&Johnson) и{" "}
-                  <br /> ИП ООО «Medical Online Services» был <br /> проведен
-                  мастер-класс в исполнении...
-                </p>
-                <div className="btn but w-[270px] h-[50px] flex justify-center items-center  mt-5 ml-10 rounded-[35px]">
-                  <button className="text-[#fff] text-center text-xl font-normal leading-normal">
-                    Подробнее
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-sm:hidden">
-              <div className="ml-5  ">
-                <img
-                  className=" max-md:w-[270px] ml-5 top-[30px] absolute z-10"
-                  src={Frame}
-                  alt=""
-                />
-              </div>
-              <div className=" py-24 btn1 bock w-[382px] h-[470px] rounded-[35px]  opacity-90 bro">
-                <a
-                  href="#"
-                  className="w-[312px] texts text-center flex items-center justify-center ml-10  text-[#0D4C93] text-xl font-normal leading-normal"
-                >
-                  Mастер-класс в исполнении Галлямова Эдуарда Абдулхаевича
-                </a>
-                <p className="text-[#0D4C93] text-center py-5 text-lg font-medium  leading-6">
-                  26.07.2021
-                </p>
-                <p className="w-[327px] h-[171px] text-[#363535] text-center ml-10  text-sm font-normal leading-6">
-                  С 19 по 21 апреля в АО «РСНПМЦУ» (Республиканский
-                  Специализированный <br />
-                  Научно-Практический Медицинский Центр Урологии) при поддержке
-                  компаний <br /> Ethicon Endo Surgery (Johnson&Johnson) и{" "}
-                  <br /> ИП ООО «Medical Online Services» был <br /> проведен
-                  мастер-класс в исполнении...
-                </p>
-                <div className="btn but w-[270px] h-[50px] flex justify-center items-center  mt-5 ml-10 rounded-[35px]">
-                  <button className="text-[#fff] text-center text-xl font-normal leading-normal">
-                    Подробнее
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-sm:hidden">
-              <div className="ml-5  ">
-                <img
-                  className="ml-5 top-[30px] absolute z-10"
-                  src={Frame}
-                  alt=""
-                />
-              </div>
-              <div className="py-24 btn1 bock w-[382px] h-[470px] rounded-[35px]  opacity-90 bro">
-                <a
-                  href="#"
-                  className="w-[312px] texts flex items-center justify-center text-center ml-10  text-[#0D4C93] text-xl font-normal leading-normal"
-                >
-                  Mастер-класс в исполнении Галлямова Эдуарда Абдулхаевича
-                </a>
-                <p className="text-[#0D4C93] text-center py-5 text-lg font-medium  leading-6">
-                  26.07.2021
-                </p>
-                <p className="w-[327px] h-[171px] text-[#363535] text-center ml-10  text-sm font-normal leading-6">
-                  С 19 по 21 апреля в АО «РСНПМЦУ» (Республиканский
-                  Специализированный <br />
-                  Научно-Практический Медицинский Центр Урологии) при поддержке
-                  компаний <br /> Ethicon Endo Surgery (Johnson&Johnson) и{" "}
-                  <br /> ИП ООО «Medical Online Services» был <br /> проведен
-                  мастер-класс в исполнении...
-                </p>
-                <div className="btn w-[270px] but h-[50px] flex justify-center items-center  mt-5 ml-10 rounded-[35px]">
-                  <button className="text-[#fff] text-center text-xl font-normal leading-normal">
-                    Подробнее
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Swiper
+          pagination={true}
+          navigation={true}
+          spaceBetween={50}
+          modules={[EffectCube, Pagination, Navigation]}
+          slidesPerView={1}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <Modal />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Modal />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Modal />
+          </SwiperSlide>
+        </Swiper>
 
         <div className="flex justify-center max-md:hidden  gap-72 items-center">
           <div className="flex gap-4 cursor-pointer ">
