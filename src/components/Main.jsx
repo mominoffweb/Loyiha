@@ -133,10 +133,10 @@ function Main() {
         </a>
       </div>
 
-      <div className="Main px-10  gap-12 flex justify-center items-center   py-20 ">
+      <div className="Main px-10 mt-[-3rem]  gap-12 flex justify-center items-center   py-20 ">
         <div className="max-md:w-[314px] flex  ml-[-10rem] max-md:ml-[-22rem] gap-12">
           {" "}
-          <div className="max-sm:w-[335px] ml-[10rem] max-md:ml-[-10px] bg-white bock w-[388px] h-[491px]   rounded-[50px]">
+          <div className=" max-[375px]:ml-20   max-sm:w-[335px] ml-[10rem] bg-white bock w-[388px] h-[491px]   rounded-[50px]">
             <img className="rounded-t-[50px]" src={Servic1} alt="" />
             <p className="text-[#0D4C93] text-xl py-5 ml-16 max-md:ml-[30px]  font-medium leading-normal">
               СЕРВИС ОБОРУДОВАНИЯ
@@ -152,7 +152,7 @@ function Main() {
               </button>
             </div>
           </div>
-          <div className="max-sm:hidden  bg-white bock w-[388px] h-[491px] max-md:w-[314px]   rounded-[50px]">
+          <div className="max-sm:hidden  max-[375px]:hidden bg-white bock w-[388px] h-[491px] max-md:w-[314px]   rounded-[50px]">
             <img className="rounded-t-[50px]" src={Servic2} alt="" />
             <p className="text-[#0D4C93] text-xl py-5 flex justify-center items-center   font-medium leading-normal">
               РЕГИСТРАЦИИ
@@ -168,7 +168,7 @@ function Main() {
               </button>
             </div>
           </div>
-          <div className="max-sm:hidden max-md:hidden  bg-white bock w-[388px] h-[491px]   rounded-[50px]">
+          <div className="max-sm:hidden max-md:hidden  max-[375px]:hidden bg-white bock w-[388px] h-[491px]   rounded-[50px]">
             <img className="rounded-t-[50px]" src={Servic3} alt="" />
             <p className="text-[#0D4C93] text-xl py-5 ml-16   font-medium leading-normal">
               УСЛУГИ ЛОГИСТИКИ
@@ -186,20 +186,23 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="  justify-center items-center px-10">
-        <div id="OКОМПАНИИ" className="flex justify-center items-center  py-12">
+      <div className="   container justify-between items-center  px-10">
+        <div
+          id="OКОМПАНИИ"
+          className="flex justify-center items-center   py-12"
+        >
           <a
             href="#OКОМПАНИИ"
-            className="text-[#0D4C93] text-[40px] font-medium  leading-normal"
+            className="text-[#0D4C93] max-[375px]:text-[20px]  text-[40px] font-medium  leading-normal"
           >
             O КОМПАНИИ
           </a>
         </div>
-        <div className=" flex bg  max-md:rounded-[50px] max-sm:w-[395px] max-sm:mt-[-3rem]   max-md:w-[598px] max-md:ml-[3rem]">
+        <div className=" flex bg    items-center max-md:rounded-[50px] max-sm:w-[395px] max-sm:mt-[-3rem]  max-md:w-[598px] max-md:ml-[3rem] ">
           <div className=" absolute max-md:hidden">
-            <div className="flex ml-[-20rem] mt-[-3rem] ">
+            <div className="flex  ml-[-20rem] mt-[-3rem] ">
               <img
-                className="w-[574px] h-[574px] ml-[12rem] "
+                className="w-[574px] h-[574px] ml-[12rem]  "
                 src={Ellips1}
                 alt=""
               />
@@ -220,9 +223,9 @@ function Main() {
               />
             </div>
           </div>
-          <div className="max-2xl:ml-[30rem] max-md:rounded-[50px]  ">
+          <div className=" container  max-2xl:ml-[30rem] max-md:rounded-[50px]  ">
             <div className="  max-md:w-[650px] h-[450px]  max-md:py-10  ">
-              <h1 className="text-[#363535]  max-sm:w-[400px] max-sm:mt-[-2rem]   max-md:ml-[-30rem] max-md:w-[600px]    mt-[3rem] text-xl  font-light leading-9">
+              <h1 className="text-[#363535]  max-sm:w-[400px] max-sm:mt-[-2rem]   max-md:ml-[-30rem] max-md:w-[600px] max-[375px]:w-[300px]     mt-[3rem] text-xl  font-light leading-9">
                 Группа компаний MEDOL создавалась высококвалифицированными
                 специалистами в сфере медицины, инженерии и экономики, за
                 плечами которых значительный опыт на рынке высоких медицинских

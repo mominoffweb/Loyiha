@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Create from "./components/Create";
 function App() {
   return (
-    <div className="">
+    <div className=" ">
       <Navbar />
       <Header />
       <Main />

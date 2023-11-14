@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
   presets: [],
   darkMode: "media", // or 'class'
   theme: {
@@ -1004,5 +1007,6 @@ export default {
       50: "50",
     },
   },
-  plugins: [],
+
+  plugins: [require("flowbite/plugin")],
 };

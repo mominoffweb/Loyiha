@@ -28,7 +28,7 @@ import { useEffect } from "react";
 
 function Footer() {
   return (
-    <div id="ПАРТНЕРЫ">
+    <div className=" " id="ПАРТНЕРЫ">
       <div className="flex justify-center items-center">
         <a
           href="#ПАРТНЕРЫ"
@@ -48,7 +48,7 @@ function Footer() {
       >
         <SwiperSlide>
           <div className="max-sm:ml-[5rem]  max-sm:w-[600px] text-center grid grid-cols-4 py-14 gap-8 px-20 max-md:grid-cols-2">
-            <div className="border  fox flex justify-center  items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
+            <div className=" border  fox flex justify-center   items-center w-[275] h-[130] rounded-[30px] bg-[#FFF] ">
               <img className="" src={Item3} alt="" />
             </div>
 
@@ -155,12 +155,12 @@ function Footer() {
 
       <div className="max-sm:flex-col flex footer_bg  py-14 justify-center items-center ">
         <div className="">
-          <div className="flex max-sm:flex-col gap-9">
+          <div className="  flex max-sm:flex-col gap-9">
             <div className=" max-2xl:hidden max-sm:block ml-[5rem] flex justify-center items-center">
               <img src={Logo} alt="" />
             </div>
             <div>
-              <h2 className="text-[#595959] text-[26px] font-medium leading-7">
+              <h2 className="text-[#595959] max-[375px]:ml-10 text-[26px] font-medium leading-7">
                 Контакты
               </h2>
             </div>
@@ -201,51 +201,63 @@ function Footer() {
               </div>
             </div>
             <div className=" font-sans max-md:hidden">
-              <h2 className="text-[#595959] text-[26px] font-medium leading-7">
+              <h2 className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[26px] font-medium leading-7">
                 О компании
               </h2>
-              <p className="text-[#595959] text-[16px] font-light leading-7">
+              <p className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[16px] font-light leading-7">
                 История
               </p>
-              <p className="text-[#595959] text-[16px] font-light leading-7">
+              <p className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[16px] font-light leading-7">
                 Партнеры
               </p>
-              <p className="text-[#595959] text-[16px] font-light leading-7">
+              <p className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[16px] font-light leading-7">
                 Вакансии
               </p>
             </div>
             <div className=" max-md:hidden">
-              <h2 className="text-[#595959] text-[26px] font-medium leading-7">
+              <h2 className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[26px] font-medium leading-7">
                 Продукция
               </h2>
-              <div className="text-[#595959] text-[16px] font-light leading-7">
-                <p>Эндоваскулярная хирургия</p>
-                <p> Аритмология</p>
-                <a
-                  className="text-[#00C9C9] text-[16px] font-light leading-7"
-                  href="#"
-                >
+              <div className="text-[#595959]  text-[16px] font-light leading-7">
+                <p className="hover:text-[#00C9C9] cursor-pointer">
+                  Эндоваскулярная хирургия
+                </p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">
+                  {" "}
+                  Аритмология
+                </p>
+                <a className=" text-[16px] font-light leading-7" href="#">
                   Кардиохирургия
                 </a>
-                <p> Лабораторная диагностика</p>
-                <p>Хирургия</p>
-                <p>Эндоурология</p>
-                <p> Нейрохирургия </p>
-                <p>Анестезиология и реанимация </p>
-                <p>Диабет</p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">
+                  {" "}
+                  Лабораторная диагностика
+                </p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">Хирургия</p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">
+                  Эндоурология
+                </p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">
+                  {" "}
+                  Нейрохирургия{" "}
+                </p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">
+                  Анестезиология и реанимация{" "}
+                </p>
+                <p className="hover:text-[#00C9C9] cursor-pointer">Диабет</p>
               </div>
             </div>
             <div className=" max-md:hidden">
-              <h2 className=" text-[#595959] text-[26px] font-medium leading-7">
+              <h2 className=" text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[26px] font-medium leading-7">
                 Услуги
               </h2>
-              <p className="text-[#595959] text-[16px] font-light leading-7">
+              <p className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[16px] font-light leading-7">
                 Сервис
               </p>
-              <p className="text-[#595959] text-[16px] font-light leading-7">
+              <p className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[16px] font-light leading-7">
                 Регистрации
               </p>
-              <p className="text-[#595959] text-[16px] font-light leading-7">
+              <p className="text-[#595959] hover:text-[#00C9C9] cursor-pointer text-[16px] font-light leading-7">
                 Услуги логистики
               </p>
             </div>
@@ -264,7 +276,7 @@ function Footer() {
             <p className="text-[#353535] text-lg font-normal leading-7 ">
               © 2021 ООО «Medical Online Services»
             </p>
-            <p className="text-[#353535] text-lg max-md:hidden font-normal leading-7">
+            <p className="text-[#353535] cursor-pointer text-lg max-md:hidden font-normal leading-7">
               Сайт разработан компанией
               <span className="text-[#00C9C9] cursor-pointer">www.uz</span>
             </p>
